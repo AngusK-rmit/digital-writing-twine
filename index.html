@@ -33,7 +33,15 @@ tw-passage {
   padding-bottom: 200px;}
 
 
-img {  /* this selects all image (img) elements */
+img.story-image-smaller {  /* this selects all images with the story-image-smaller class */
+  width: 50%;
+}
+
+img.story-image-meduim {  /* this selects all images with the story-image-smaller class */
+  width: 75%;
+}
+
+img.story-image-large {  /* this selects all images with the story-image-smaller class */
   width: 100%;
 }
 
@@ -53,7 +61,13 @@ img {  /* this selects all image (img) elements */
 
 &lt;img class=&quot;story-image&quot; src=&quot;./images/horseASCII.jpeg&quot; alt=&quot;horse&quot; /&gt;
 
-&lt;audio src=&quot;./audio/chopinsong.mp3&quot; autoplay loop&gt;&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="5" name="Fight me" tags="" position="475,525" size="100,100">bababooie</tw-passagedata></tw-storydata>
+&lt;audio src=&quot;./audio/chopinsong.mp3&quot; autoplay loop&gt;&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="5" name="Fight me" tags="" position="475,525" size="100,100">bababooie
+
+&lt;img class=&quot;story-image-smaller&quot; src=&quot;./images/horseASCII.jpeg&quot; alt=&quot;an example&quot; /&gt;
+
+&lt;img class=&quot;story-image-medium&quot; src=&quot;./images/cherryblossom.jpg&quot; alt=&quot;an example&quot; /&gt;
+
+&lt;img class=&quot;story-image-larger&quot; src=&quot;./images/cityphoto.jpg&quot; alt=&quot;an example&quot; /&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
