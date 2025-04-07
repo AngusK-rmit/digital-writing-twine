@@ -63,9 +63,15 @@ img.story-image-large {  /* this selects all images with the story-image-smaller
 max-width: 100%;
 height: auto;
 display: block;
+}
+
+tw-story[tags~="example-background"] {  /* the tag added in step 2 */
+  background-image: url(./images/cityphoto.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="BUILD" tags="" position="600,250" size="100,100">[[beep boop]]
 
-&lt;img class=&quot;story-image&quot; src=&quot;./images/cityphoto.jpg&quot; alt=&quot;city&quot; /&gt;</tw-passagedata><tw-passagedata pid="2" name="Untitled Passage 1" tags="" position="575,100" size="100,100"></tw-passagedata><tw-passagedata pid="3" name="beep boop" tags="" position="600,400" size="100,100">that would be something you would say. 
+&lt;img class=&quot;story-image&quot; src=&quot;./images/cityphoto.jpg&quot; alt=&quot;city&quot; /&gt;</tw-passagedata><tw-passagedata pid="2" name="Untitled Passage 1" tags="" position="600,125" size="100,100"></tw-passagedata><tw-passagedata pid="3" name="beep boop" tags="" position="600,400" size="100,100">that would be something you would say. 
 
 (align:&quot;=&gt;&lt;=&quot;)[[Fight me]]
 
@@ -79,13 +85,15 @@ display: block;
 
 &lt;img class=&quot;story-image&quot; src=&quot;./images/horseASCII.jpeg&quot; alt=&quot;horse&quot; /&gt;
 
-&lt;audio src=&quot;./audio/chopinsong.mp3&quot; autoplay loop&gt;&lt;/audio&gt;</tw-passagedata><tw-passagedata pid="5" name="Fight me" tags="" position="475,525" size="100,100">[[bababooie]]
+&lt;audio src=&quot;./audio/chopinsong.mp3&quot; autoplay loop&gt;&lt;/audio&gt;
+
+[[Move on]]</tw-passagedata><tw-passagedata pid="5" name="Fight me" tags="" position="475,525" size="100,100">[[bababooie]]
 
 &lt;img class=&quot;story-image-smaller&quot; src=&quot;./images/horseASCII.jpeg&quot; alt=&quot;an example&quot; /&gt;
 
 &lt;img class=&quot;story-image-medium&quot; src=&quot;./images/cherryblossom.jpg&quot; alt=&quot;an example&quot; /&gt;
 
-&lt;img class=&quot;story-image-larger&quot; src=&quot;./images/cityphoto.jpg&quot; alt=&quot;an example&quot; /&gt;</tw-passagedata><tw-passagedata pid="6" name="bababooie" tags="" position="475,650" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;What the dog doing?&lt;/div&gt;&lt;div class=&quot;story-image&quot;&gt;&lt;img src=&quot;./images/cherryblossom.jpg&quot; alt=&quot;cherry&quot; /&gt;&lt;/div&gt;&lt;/div&gt;</tw-passagedata></tw-storydata>
+&lt;img class=&quot;story-image-larger&quot; src=&quot;./images/cityphoto.jpg&quot; alt=&quot;an example&quot; /&gt;</tw-passagedata><tw-passagedata pid="6" name="bababooie" tags="" position="475,650" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;What the dog doing?&lt;/div&gt;&lt;div class=&quot;story-image&quot;&gt;&lt;img src=&quot;./images/cherryblossom.jpg&quot; alt=&quot;cherry&quot; /&gt;&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Move on" tags="example-background" position="700,650" size="100,100">Banana</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
